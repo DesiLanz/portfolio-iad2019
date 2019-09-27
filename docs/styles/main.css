@@ -4,6 +4,7 @@ html {
   line-height: 1.45;
  margin-top: 50px;
  margin-left: 50px;
+ background-color: rgb(255, 129, 27);
 
 }
 
@@ -12,5 +13,56 @@ font-family: 'Roboto', sans-serif;
 font-style: bold;
 font-size: 5rem;
 letter-spacing: 0.2em;
+text-shadow: 5px 5px 0px white;
+/* color: rgb(27, 193, 255); */
+
+
+}
+
+h2 {
+font-size: 30px;
+font-style: bold;
+}
+
+
+.Header {
+  width: 32rem;
+  /* margin-left: 80px; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Bild{
+  flex-basis: 5%;
+  max-width: 5%;
+}
+.Titel {
+  margin-top: 180px;
+  flex-basis: 60%;
+  max-width: 60%;
+
+}
+img {
+  width: 350px;
+
+}
+.Basil{
+  opacity: 0.4;
+
+}
+
+.Scheibe {
+  width: 200px;
+  text-align: right;
+}
+.text {
+  margin-top: 100px;
+  margin-right: 50px;
+}
+.Internet {
+  width: 200px;
+  margin-top: 60px;
+
 
 }
