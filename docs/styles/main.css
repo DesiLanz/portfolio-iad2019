@@ -1,68 +1,208 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(251, 105, 0)
+}
+
 html {
+font-family: 'IBM Plex Serif', serif;
+font-size: 25px;
+line-height: 1.5em;
+font-weight: 400;
+letter-spacing: 1.2;
+}
+
+h1{
   font-family: 'Roboto', sans-serif;
-  font-size: 16px
-  line-height: 1.45;
- margin-top: 50px;
- margin-left: 50px;
- background-color: rgb(255, 129, 27);
-
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.3em;
+  letter-spacing: 0.3em;
+  text-shadow: 6px 6px white;
 }
-
+@media (max-width: 1250px){
 h1 {
-font-family: 'Roboto', sans-serif;
-font-style: bold;
-font-size: 5rem;
-letter-spacing: 0.2em;
-text-shadow: 5px 5px 0px white;
-/* color: rgb(27, 193, 255); */
-
-
+  font-size: 3.5rem;
+  line-height: 1.3em;
+  letter-spacing: 0.3em;
+ }
 }
-
 h2 {
-font-size: 30px;
-font-style: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size:0.8rem;
+  line-height: 1.2em;
+  letter-spacing: 0.5em;
+  color: white;
+  margin-top: -175px;
+  margin-left: 400px;
+}
+@media (max-width: 1250px){
+h2 {
+  margin-top: -152px;
+  margin-left: 355px;
+ }
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size:2.25rem;
+  line-height: 1.3em;
 }
 
-
-.Header {
-  width: 32rem;
-  /* margin-left: 80px; */
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.Bild{
-  flex-basis: 5%;
-  max-width: 5%;
-}
-.Titel {
-  margin-top: 180px;
-  flex-basis: 60%;
-  max-width: 60%;
-
-}
-img {
-  width: 350px;
-
-}
-.Basil{
-  opacity: 0.4;
-
-}
-
-.Scheibe {
-  width: 200px;
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 4px 4px rgba(160, 0, 0, 0.9);
   text-align: right;
 }
-.text {
-  margin-top: 100px;
-  margin-right: 50px;
+.lead {
+  font-size: 1rem;
+  line-height: 1.4em;
+  letter-spacing: 0.04em;
+  font-style: italic;
+  color: white;
 }
-.Internet {
-  width: 200px;
-  margin-top: 60px;
+
+.Kopf {
+  margin-top: 230px;
+}
+
+.Basil {
+  width: 350px;
+  margin-top: 200px;
+  opacity: 0.9;
+}
+@media (max-width: 1250px){
+.Basil{
+  width: 220px;
+  margin-top: 350px;
+ }
+}
+
+.leadText {
+  max-width: 60%;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 26%;
+}
+
+.QuoteBasilRechts {
+padding-bottom: 5%;
+margin-right: 10%;
+}
+.QuoteDesilRechts{
+  text-align: right;
+  margin-right: 13%;
+  padding-top: 8%;
+}
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 6%;
+}
+
+.Titelei {
+  margin-left: 20vw;
+  padding-top: 20%;
+}
+.Grundtext{
+  max-width: 60%;
+  width: 50%;
+}
+.Auszeichnung {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Dias{
+  width: 70%;
+  margin-left: 25vw;
+  margin-top: -26vw;
+  padding-bottom: 10vw;
+ }
+
+ .LOI{
+   max-width: 80%;
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 20vw;
+ }
+
+.hideme
+{
+    opacity:0;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: .07em;
+  height: .1em;
+  width: 100%;
+  /* background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959); */
+  background: linear-gradient(110deg, #ffffff, #fb6900);
+  z-index: -1;
+  transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+
+a:hover::after {
+  height: .5em;
+}
 
 
+#myBtn {
+   width: 50px;
+   height: 50px;
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 30px;
+   z-index: 99;
+   border: none;
+   outline: none;
+   font-size: 25px !important;
+   color: white;
+   cursor: pointer;
+   padding: 10px 10px 10px 11px;
+   border-radius: 50%;
+   box-shadow: 1px 1px 5px #000;
+   // Change the hex code in the next line to change background color
+   background-color: #a4a4a4;
+}
+
+#myBtn:hover {
+   background-color: #000000;
+}
+
+
+.icon {
+  width: 300px;
+  margin-left: 77%;
+  transform: translateY(265px);
 }
