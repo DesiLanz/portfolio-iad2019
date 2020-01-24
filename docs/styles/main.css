@@ -11,6 +11,13 @@ line-height: 1.5em;
 font-weight: 400;
 letter-spacing: 1.2;
 }
+@media (max-width:800px) {
+  html {
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 1.2;
+  }
+}
 
 h1{
   font-family: 'Roboto', sans-serif;
@@ -27,7 +34,14 @@ h1 {
   letter-spacing: 0.3em;
  }
 }
-h2 {
+@media (max-width: 1000px){
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.3em;
+  letter-spacing: 0.3em;
+ }
+}
+h4 {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size:0.8rem;
@@ -38,19 +52,80 @@ h2 {
   margin-left: 400px;
 }
 @media (max-width: 1250px){
-h2 {
+h4 {
   margin-top: -152px;
   margin-left: 355px;
  }
 }
+@media (max-width: 1000px){
+  h4 {
+    font-size:0.8rem;
+    line-height: 1.4em;
+    margin-top: -23px;
+    margin-left: 5px;
+   }
+  }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.3em;
+  letter-spacing: 0.3em;
+  text-shadow: 6px 6px white;
+}
+@media (max-width: 1150px) {
+  h2 {
+    text-shadow: 5px 5px white;
+  }}
+  @media (max-width: 800px) {
+    h2 {
+      font-size: 2.85rem;
+      letter-spacing: 0.25em;
+      text-shadow: 4px 4px white;
+    }}
+    @media (max-width: 700px) {
+      h2 {
+        font-size: 2.55rem;
+        letter-spacing: 0.25em;
+        text-shadow: 4px 4px white;
+      }}
+      @media (max-width: 600px) {
+        h2 {
+          font-size: 2.1rem;
+          letter-spacing: 0.25em;
+          text-shadow: 4px 4px white;
+          margin-left: -3vw;
+        }}
 h3{
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size:2.25rem;
   line-height: 1.3em;
+  letter-spacing: 0.05em;
+  margin-top: -0.5vw;
 }
-
-h4 {
+@media (max-width:1250px) {
+  h3{
+    font-size:1.9rem;
+    letter-spacing: 0.05em;
+    margin-top: -1.5vw;
+  }}
+@media (max-width:900px) {
+  h3{
+    font-size:1.6rem;
+    letter-spacing: 0.05em;
+    margin-left: 3vw;
+    margin-top: -1.5vw;
+  }}
+@media (max-width:550px) {
+  h3{
+    font-size:1.6rem;
+    letter-spacing: 0.05em;
+    margin-left: 3vw;
+    margin-top: -3.5vw;
+  }}
+.quote {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-style: italic;
@@ -59,9 +134,25 @@ h4 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: white;
-  text-shadow: 4px 4px rgba(160, 0, 0, 0.9);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.9);
   text-align: right;
 }
+@media (max-width: 1000px){
+  .quote {
+    font-size: 1.25rem;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.9);
+  }}
+  @media (max-width: 580px){
+    .quote {
+      font-size: 1.1rem;
+      line-height: 1.3em;
+      letter-spacing: 0.1em;
+      text-shadow: 4px 4px rgba(0, 0, 0, 0.9);
+    }}
+
+
 .lead {
   font-size: 1rem;
   line-height: 1.4em;
@@ -69,9 +160,21 @@ h4 {
   font-style: italic;
   color: white;
 }
+@media (max-width: 900px){
+  .lead {
+    font-size: 1rem;
+    line-height: 1.4em;
+    letter-spacing: 0.04em;
+  }}
 
 .Kopf {
   margin-top: 230px;
+}
+@media (max-width: 1000px){
+  .Kopf {
+    margin-top: 320px;
+    margin-left: -200px;
+  }
 }
 
 .Basil {
@@ -85,23 +188,65 @@ h4 {
   margin-top: 350px;
  }
 }
+@media (max-width: 1000px){
+.Basil{
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 20px;
+ }
+}
 
 .leadText {
   max-width: 60%;
   width: 55%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 26%;
+  padding-top: 20%;
 }
+@media (max-width: 1250px){
+  .leadText {
+    max-width: 75%;
+    width:65%;
+  }}
+  @media (max-width: 1000px){
+    .leadText {
+      max-width: 90%;
+      width:85%;
+    }}
+@media (max-width: 1000px){
+  .leadText {
+    max-width: 90%;
+    width:85%;
+    padding-top: -20%;
+      }}
+
 
 .QuoteBasilRechts {
 padding-bottom: 5%;
+padding-top: 25%;
 margin-right: 10%;
 }
+
+.Beschreibung {
+  padding-left: 45vw;
+  margin-top: 5%;
+  width:35%;
+  text-align: right;
+}
+@media (max-width: 1000px) {
+  .Beschreibung {
+    padding-left: 45vw;
+    width:50%;
+  }}
+  @media (max-width: 600px) {
+    .Beschreibung {
+      padding-left: 40vw;
+      width:60%;
+    }}
 .QuoteDesilRechts{
   text-align: right;
-  margin-right: 13%;
-  padding-top: 8%;
+  margin-right: 10vw;
+  padding-top: 20%;
 }
 .container{
   width: 80%;
@@ -112,14 +257,52 @@ margin-right: 10%;
   grid-gap: 6%;
 }
 
+
 .Titelei {
   margin-left: 20vw;
-  padding-top: 20%;
+  padding-top: 10%;
+}
+@media (max-width:1000px) {
+  .Titelei {
+    margin-left: 10vw;
+    padding-top: 17%;
+  }
+}
+@media (max-width:700px) {
+  .Titelei {
+    margin-left: 8vw;
+    padding-top: 17%;
+  }
+}
+.fa-plus {
+  font-size: 60px;
+  color:white;
+  margin-left: -4vw;
+
+}
+@media (max-width:1000px) {
+  .fa-plus {
+    font-size: 45px;
+  }
+
 }
 .Grundtext{
   max-width: 60%;
   width: 50%;
+  margin-left: 30vw;
 }
+@media (max-width:1000px) {
+  .Grundtext{
+    max-width: 75%;
+    width: 65%;
+    }}
+@media (max-width:800px) {
+.Grundtext{
+  max-width: 90%;
+  width: 80%;
+  margin-left: 15vw;
+  }}
+
 .Auszeichnung {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -128,23 +311,346 @@ margin-right: 10%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 15%;
+  margin-left: -10vw;
+  text-align: left;
 }
 
-.Dias{
-  width: 70%;
-  margin-left: 25vw;
-  margin-top: -26vw;
-  padding-bottom: 10vw;
+.AuswahlTitel {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.DarkmanDia {
+  width: 40%;
+  margin-left: -20vw;
+  margin-top: 5vw;
  }
+   @media (max-width: 1000px) {
+     .DarkmanDia {
+       width: 40%;
+       margin-left: -20vw;
+       margin-top: 5vw;
+      }}
+
+         @media (max-width: 800px) {
+           .DarkmanDia {
+             width: 40%;
+             margin-left: -10vw;
+             margin-top: 5vw;
+            }}
+
+               @media (max-width: 600px) {
+                 .DarkmanDia {
+                   width: 42%;
+                   margin-left: -10vw;
+                   margin-top: 5vw;
+                  }}
+
+.Dias{
+width: 65vw;
+margin-left: -5.7vw;
+margin-top: -12vw;
+padding-bottom: 8vw;
+}
+@media (max-width: 1000px) {
+  .Dias{
+  width: 75vw;
+  }}
+  @media (max-width: 800px) {
+    .Dias{
+    width: 90vw;
+    margin-left: -10vw;
+    margin-top: 2vw;
+    padding-bottom: 8vw;
+    }}
+    @media (max-width: 650px) {
+      .Dias{
+      width: 100vw;
+      margin-left: -12vw;
+      padding-bottom: 8vw;
+      }}
+
+ .Matroshka {
+   width: 280px;
+   margin-left: 32vw;
+   margin-top: -360px;
+ }
+ @media (max-width: 1200px) {
+   .Matroshka {
+     width: 200px;
+     margin-left: 36vw;
+     margin-top: -360px;
+   } }
+   @media (max-width: 1050px) {
+     .Matroshka {
+       width: 180px;
+       margin-left: 42vw;
+       margin-top: -380px;
+     } }
+     @media (max-width: 900px) {
+       .Matroshka {
+         width: 180px;
+         margin-left: 45vw;
+         margin-top: -450px;
+       } }
+       @media (max-width: 600px) {
+         .Matroshka {
+           width: 160px;
+           margin-left: 45vw;
+           margin-top: -450px;
+         } }
+.Idee{
+  width:16vw;
+  margin-left: 20vw;
+  margin-top: -25vw;
+}
+@media (max-width: 1350px) {
+  .Idee{
+    width:20vw;
+    margin-left: 30vw;
+    margin-top: -34vw;
+  }}
+  @media (max-width: 950px) {
+    .Idee{
+      width:25vw;
+      margin-left: 38vw;
+      margin-top: -40vw;
+    }}
+    @media (max-width: 800px) {
+      .Idee{
+        width:25vw;
+        margin-left: 30vw;
+        margin-top: -40vw;
+      }}
+@media (max-width: 700px) {
+  .Idee{
+    width:29vw;
+    margin-left: 35vw;
+    margin-top: -35vw;
+  }}
+
+ .Schreiben{
+    width: 50vw;
+    padding-left: 10vw;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+         }
+@media (max-width: 800px) {
+   .Schreiben{
+    width: 75vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    }}
+     @media (max-width: 650px) {
+      .Schreiben{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+             }}
+
+ .Kosmos{
+    width: 35vw;
+    padding-left: 45vw;
+    padding-top: 5vw;
+    padding-bottom: 15vw;
+    }
+    @media (max-width: 800px) {
+       .Kosmos{
+         width: 60vw;
+         padding-left: 30vw;
+         padding-top: 5vw;
+         padding-bottom: 15vw;
+        }}
+         @media (max-width: 650px) {
+          .Kosmos{
+          width: 90%;
+          margin-left:-25vw;
+                 }}
+
+.Probe{
+  width: 50vw;
+  padding-left: 30vw;
+  padding-top: 5vw;
+  padding-bottom: 15vw;
+}
+@media (max-width: 650px) {
+ .Probe{
+ width: 90%;
+ margin-left: -24vw;
+        }}
+
+ .Cheers{
+   width: 50vw;
+   margin-left: auto;
+   margin-right: auto;
+  }
+ @media (max-width: 800px) {
+   .Cheers{
+     width: 75vw;
+ }}
+ .Börse {
+   width: 550px;
+   padding-top: 5vw;
+ }
+ @media (max-width:800px) {
+   .Börse {
+     width: 400px;
+   }}
+   @media (max-width:600px) {
+     .Börse {
+       width: 320px;
+     }}
+.Flohmi{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7vw;
+  padding-bottom: 10vw;
+}
+.BilderFlohmi1{
+  width: 43.2%;
+  padding: 0.5vw;
+  margin-left: 20vw;
+}
+@media (max-width: 800px) {
+  .BilderFlohmi1{
+    width: 55%;
+    padding: 0.5vw;
+    margin-left: 5vw;
+  }}
+  @media (max-width: 650px) {
+    .BilderFlohmi1{
+      width: 90%;
+      padding: 0.5vw;
+    }}
+
+.BilderFlohmi2{
+  width: 28%;
+  padding: 0.5vw;
+  margin-left: 35vw;
+}
+@media (max-width: 800px) {
+  .BilderFlohmi2{
+    width:35%;
+    padding: 0.5vw;
+    margin-left: 24.5vw;
+  }}
+  @media (max-width: 650px) {
+    .BilderFlohmi2{
+      width: 40%;
+      padding: 1vw;
+      margin-left: 8vw;
+    }}
+.BilderFlohmi3{
+    width: 28%;
+    padding: 0.5vw;
+}
+@media (max-width: 800px) {
+  .BilderFlohmi3{
+    width:35%;
+    padding: 0.5vw;
+  }}
+  @media (max-width: 650px) {
+    .BilderFlohmi3{
+      width: 40%;
+      padding: 1vw;
+    }}
+
+
+.Auswahl{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 7vw;
+  padding-bottom: 10%;
+}
+.AuswahlBilder{
+  width: 350px;
+  border: 0;
+  padding: 0.5vw;
+}
+@media (max-width:1250px) {
+  .AuswahlBilder{
+    width: 290px;
+    border: 0;
+    padding: 0.5vw;
+  }}
+  @media (max-width:1000px) {
+    .AuswahlBilder{
+      width: 240px;
+      border: 0;
+      padding: 0.5vw;
+    }}
+    @media (max-width:780px) {
+      .AuswahlBilder{
+        width: 210px;
+        border: 0;
+        padding: 0.5vw;
+      }}
+      @media (max-width:680px) {
+        .AuswahlBilder{
+          width: 180px;
+          border: 0;
+          padding: 0.5vw;
+        }}
+        @media (max-width:600px) {
+          .AuswahlBilder{
+            width: 150px;
+            border: 0;
+            padding: 0.5vw;
+          }}
 
  .LOI{
    max-width: 80%;
    width: 60%;
    margin-left: auto;
    margin-right: auto;
-   padding-top: 20vw;
+   padding-top: 35vw;
  }
-
+ @media (max-width:1250px) {
+   .LOI{
+     padding-top: 45vw;
+   }}
+   @media (max-width:900px) {
+     .LOI{
+       padding-top: 50vw;
+     }}
+/* video {
+  width:100%;
+  height: 100%;
+  padding-top: 6vw;
+} */
+iframe{
+  padding-top: 8%;
+  width: 50%;
+  margin-left: 30vw;
+}
+@media (max-width:1100px) {
+  iframe{
+    padding-top: 6%;
+    width: 65%;
+    margin-left: 30vw;
+  }}
+  @media (max-width:800px) {
+    iframe{
+      padding-top: -10vw;
+      width: 80%;
+      margin-left: 10vw;
+    }}
+    @media (max-width:600px) {
+      iframe{
+        padding-top: -10vw;
+        width: 100%;
+        margin-left: 3vw;
+        margin-right: auto;
+      }}
 .hideme
 {
     opacity:0;
@@ -199,6 +705,8 @@ a:hover::after {
 #myBtn:hover {
    background-color: #000000;
 }
+
+
 
 
 .icon {
