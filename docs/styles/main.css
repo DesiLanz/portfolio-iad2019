@@ -622,11 +622,12 @@ padding-bottom: 8vw;
      .LOI{
        padding-top: 50vw;
      }}
-/* video {
-  width:100%;
-  height: 100%;
-  padding-top: 6vw;
-} */
+.copyright{
+  font-size: 0.5rem;
+  text-align: right;
+  padding-right: 22vw;
+ padding-bottom: 5vw;
+}
 iframe{
   padding-top: 8%;
   width: 50%;
